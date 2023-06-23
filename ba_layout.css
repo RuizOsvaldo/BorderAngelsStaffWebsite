@@ -13,36 +13,44 @@ body{
 }
 
 .logo{
-    width: 300px;
-    margin-bottom: 30px;
+    width: 350px;
+    margin-bottom: 40px;
 }
 
-.login-box{
-    background-color: #FECA06;
+.login-box {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #10385c;
+    background-color: #a2912d;
     width: 300px;
     padding: 20px;
     text-align: center;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2{
     margin-top: 0;
 }
 
-input, button{
+.login-box input, .login-box button{
     display: block;
     width: 100%;
     margin-bottom: 10px;
     padding: 8px;
     border-style: solid;
     border-width: medium;
+    align-items: center;
 }
 
-button{
+button {
     background-color: #10385c;
     color: white;
+    margin-left: 10px;
 }
 
-button:hover{
-    background-color: #FECA06;
+button:hover {
+    opacity: .9;
 }
