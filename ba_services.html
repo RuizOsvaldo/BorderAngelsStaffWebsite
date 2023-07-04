@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+    <!--
+      This will serve as the service page for my.borderangels.org
+
+      Author: Osvaldo Ruiz
+      Date:   7/2/23
+    -->
+    <link rel="stylesheet" type="text/css" href="ba_layout.css">
+    <script src="script.js"></script>
+  </head>
+
+  <!-- Body -->
+  <body>
+    <!-- Logo -->
+    <div class="image-container">
+      <img src="ba_logo.png" alt="Website Logo">
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navigation-bar">
+      <nav>
+          <ul>
+          <li><a href="ba_home.html">Home</a></li>
+          <li><a href="ba_resources.html">Resources</a></li>
+          <li><a href="ba_services.html">Services</a></li>
+          <li><a href="ba_volunteers.html">Volunteers</a></li>
+          <li><a href="ba_contacts.html">Contacts</a></li>
+          <li><a href="ba_links.html">Links</a></li>
+          <li><a href="ba_links.html">Sign Out</a></li>
+          </ul>
+      </nav>
+    </div>
+    
+    <!-- Services -->
+    <div class="service-container">
+      <form>
+        <div id="services-dropdown">
+          <h2>Services</h2>
+          <label for="service">Service: </label>
+          <select id="service">
+            <option value="empty">--select--</option>
+            <option value="WD">Water Drop</option>
+            <option value="COL">Caravan of Love</option>
+            <option value="DLO">Day Laborer Outreach</option>
+            <option value="VAC">Volviendo a Casa</option>
+            <option value="Bond">Bond Program</option>
+          </select>
+        </div>
+        <div id="service-input">
+          <label for="service-create">Create Event: </label>
+          <input type="radio" id="service-create" name="event" value="Create Event">
+
+          <label for="service-view">View Event: </label>
+          <input type="radio" id="service-view" name="event" value="View Events">
+        </div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      
+    </div>
+  </body>
+
+  <!-- Footer -->
+  <footer>
+    <div class="home-website">
+        <button onclick="redirectToWebsite()">Main Website</button>
+    </div>
+  </footer>
+</html>

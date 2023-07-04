@@ -1,10 +1,12 @@
+/* Changing the background of the page */
 body{
     background-color: #10385c;
     margin: 0;
     padding: 0;
 }
 
-.container{
+/* Targeting the first Div element */
+.login-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,15 +14,19 @@ body{
     height: 100vh;
 }
 
+/* Customizing the logo */
 .logo{
     width: 350px;
     margin-bottom: 40px;
+    align-items: center;
 }
 
+/* Customizing the login container to be centered and different color than background */
 .login-box {
+    color:white;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    text-shadow: 2px 2px 4px #10385c;
+    text-shadow: 2px 2px 4px #486a53;
     background-color: #a2912d;
     width: 300px;
     padding: 20px;
@@ -31,10 +37,94 @@ body{
     align-items: center;
 }
 
-h2{
-    margin-top: 0;
+/* Customizing the navication bar */
+.navigation-bar, #notes-container{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #486a53;
+    background-color: #a2912d;
+    width: 600px;
+    padding: 15px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Creating gaps within the containers */
+#service, #service-input, #resource-list {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #486a53;
+    margin: 10px auto;
+}
+
+#volunteers-create, #volunteers-search{
+    display: flex;
+    flex-direction: center;
+
+}
+/*  Adjusting the containers in every page*/
+.resources-container, .service-container, #notes-container, .volunteers-container{
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #486a53;
+    background-color: #a2912d;
+    display:flex;
+    justify-content: center;
+    width: 600px;
+    height: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 10px auto 10px;
+    align-items: center;
+    
+}
+
+
+.volunteers-create,
+.volunteers-search,
+.volunteers-profile {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px 20px;
+}
+
+.volunteers-create input[type="text"],
+.volunteers-create input[type="email"],
+.volunteers-create input[type="file"],
+.volunteers-create select {
+ 
+  margin-bottom: 5px; /* Increase the margin-bottom value */
+  box-sizing: border-box;
+}
+
+.volunteers-search{
+    margin-top: 50px;
+}
+
+
+
+
+/* Adjusting the text are in the home page */
+textarea{
+    width: 99%;
+    text-align: center;
+    overflow: auto;
+}
+
+/* Targeting the LOGIN text */
+h2{
+    margin-top: 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Aligning the inputs and button */
 .login-box input, .login-box button{
     display: block;
     width: 100%;
@@ -45,12 +135,49 @@ h2{
     align-items: center;
 }
 
-button {
-    background-color: #10385c;
-    color: white;
+/* Adjusting the button to the right so it can be centered */
+.login-box button{
     margin-left: 10px;
 }
 
+/* cusomtizing the button to background color and moving it a bit to the right */
+button {
+    background-color: #10385c;
+    color: white;
+}
+
+/* using some effects for the button */
 button:hover {
     opacity: .9;
+}
+
+
+
+.image-container {
+text-align: center;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+nav ul li {
+display: inline-block;
+margin-right: 10px;
+}
+
+nav a:visited {
+color:white;
+}
+
+nav a:hover{
+color:#486a53;
+}
+
+button {
+display: block;
+margin: 20px auto;
 }
