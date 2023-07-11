@@ -7,7 +7,7 @@ document.getElementById('login-box').addEventListener('submit', function(e) {
     var password = document.getElementById('password').value;
   
     // Example: check if the username is "admin" and password is "password"
-    if (username === 'baosvaldo' && password === 'bapassword') {
+    if (username === 'user' && password === 'password') {
       window.location.href = 'ba_home.html'; // Redirect to the home page
     } else {
       alert('Invalid login credentials. Please try again.');
