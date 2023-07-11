@@ -39,10 +39,10 @@ body{
 
 /* Customizing the navication bar */
 .navigation-bar, #notes-container{
-    color: white;
+    
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    text-shadow: 2px 2px 4px #486a53;
+    text-shadow: 2px 2px 4px white;
     background-color: #a2912d;
     width: 600px;
     padding: 15px;
@@ -54,29 +54,32 @@ body{
 }
 
 /* Creating gaps within the containers */
-#service, #service-input, #resource-list {
+#service, #service-input, #resource-list, #links-list {
+    color:#486a53;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    text-shadow: 2px 2px 4px #486a53;
+    text-shadow: 2px 2px 4px white;
     margin: 10px auto;
 }
 
+/* Aligning the two containers in the volunteers page */
 #volunteers-create, #volunteers-search{
     display: flex;
     flex-direction: center;
 
 }
 /*  Adjusting the containers in every page*/
-.resources-container, .service-container, #notes-container, .volunteers-container{
-    color:white;
+.resources-container, .service-container, #notes-container, 
+.volunteers-container, .contacts-container, .links-container{
+    color: #486a53;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    text-shadow: 2px 2px 4px #486a53;
+    text-shadow: 2px 2px 4px white;
     background-color: #a2912d;
     display:flex;
     justify-content: center;
     width: 600px;
-    height: 200px;
+    height: 100%;
     padding: 15px;
     text-align: center;
     margin: 10px auto 10px;
@@ -84,7 +87,24 @@ body{
     
 }
 
+/* Making the contacts be aligned and formatted in a column setting*/
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+}
 
+/* Making the rows of the contacts page be aligned */
+.row {
+    display: flex;
+    gap:50px;
+}
+
+/* Creating space between the columns */
+.column {
+    width: 50%;
+}
+
+/* Adjusting the three containers withing volunteer container */
 .volunteers-create,
 .volunteers-search,
 .volunteers-profile {
@@ -94,6 +114,7 @@ body{
   margin: 20px 20px;
 }
 
+/* Adjusting the fields inside of the first container in volunteers so they are aligned */
 .volunteers-create input[type="text"],
 .volunteers-create input[type="email"],
 .volunteers-create input[type="file"],
@@ -106,8 +127,6 @@ body{
 .volunteers-search{
     margin-top: 50px;
 }
-
-
 
 
 /* Adjusting the text are in the home page */
@@ -152,10 +171,10 @@ button:hover {
 }
 
 
-
 .image-container {
 text-align: center;
 }
+
 
 nav ul {
 list-style-type: none;
@@ -170,11 +189,11 @@ margin-right: 10px;
 }
 
 nav a:visited {
-color:white;
+color: #486a53;
 }
 
 nav a:hover{
-color:#486a53;
+color:white;
 }
 
 button {

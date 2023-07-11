@@ -1,5 +1,5 @@
 // Login functionality
-document.getElementById('login-form').addEventListener('submit', function(e) {
+document.getElementById('login-box').addEventListener('submit', function(e) {
     e.preventDefault(); // Prevent form submission
   
     // Add your login verification logic here
