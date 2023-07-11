@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!--
+            This will serve as the log in page for my.borderangels.org
+
+            Author: Osvaldo Ruiz
+            Date:   7/2/23
+        -->
+
+        <!-- meta elements -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="language" content="en">
+
+        <title>Login Page</title>
+
+        <!-- links to CSS and JS pages in this folder -->
+        <link rel="stylesheet" href="ba_layout.css">
+        <script src="script.js" defer></script>
+
+    </head>
+    <body>
+        <!-- Creating container for logo and nested container for login form -->
+        <div class="image-container">
+            <img src="ba_logo.png" alt="Logo" class="logo">
+
+            <!-- Creating container for form -->
+            <div class="login-box" id="login-box">
+                <h2>LOGIN</h2>
+                <form>
+                    <!-- Requesting username and password -->
+                    <input id="username" type="text" placeholder="Username" required>
+                    <input id="password" type="password" placeholder="Password" required>
+                    <button type="submit">LOGIN</button>
+                </form>
+            </div>
+
+        </div>
+        
+    </body>
+</html>
